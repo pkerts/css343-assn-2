@@ -3,7 +3,7 @@
 //t test here
 
 //lets goooo
-/*
+
 // Yusuf Pisan pisan@uw.edu
 // 15 Jan 2018
 
@@ -84,4 +84,3 @@ void sideways(BinaryNode<ItemType>* current, int level) const;
 #include "binarysearchtree.cpp"
 
 #endif // BINARYSEARCHTREE_H
-*/
