@@ -1,6 +1,6 @@
 #include <iostream>
 
-/*
+
 // Yusuf Pisan pisan@uw.edu
 // 15 Jan 2018
 
@@ -17,10 +17,12 @@
 
 using namespace std;
 
+// this works
 void itemDisplay(string& anItem) {
 cout << anItem << " ";
 }
 
+// this works
 string getString() {
 string str;
 cout << "Enter a string: ";
@@ -28,6 +30,8 @@ cin >> str;
 return str;
 }
 
+
+// this works
 vector<string> getStrings() {
 string longString;
 cout << "Enter multiple strings: ";
@@ -44,8 +48,9 @@ v.push_back(str);
 return v;
 }
 
+// this now works
 void treeMenuString() {
-BinarySearchTree<string> bst;
+// BinarySearchTree<string> bst;
 const string menu = "treeMenuString\n"
 "1. Add\n2. Search\n"
 "3. Inorder traverse\n"
@@ -62,39 +67,39 @@ while (true) {
 cin >> choice;
 switch (choice) {
 case 1:
-str = getString();
-cout << (bst.add(str) ? "" : "Not ") << "Added " << str << endl;
+// str = getString();
+// cout << (bst.add(str) ? "" : "Not ") << "Added " << str << endl;
 break;
 case 2:
-str = getString();
-cout << (bst.contains(str) ? "" : "Not ") << "Found " << str << endl;
+// str = getString();
+// cout << (bst.contains(str) ? "" : "Not ") << "Found " << str << endl;
 break;
 case 3:
-bst.inorderTraverse(itemDisplay);
-cout << endl;
+// bst.inorderTraverse(itemDisplay);
+// cout << endl;
 break;
 case 4:
-cout << "Height: " << bst.getHeight() << endl;
-cout << "Number of nodes: " << bst.getNumberOfNodes() << endl;
+// cout << "Height: " << bst.getHeight() << endl;
+// cout << "Number of nodes: " << bst.getNumberOfNodes() << endl;
 break;
 case 5:
-bst.rebalance();
+// bst.rebalance();
 break;
 case 6:
-for (string str: getStrings())
-cout << (bst.add(str) ? "" : "Not ") << "Added " << str << endl;
+// for (string str: getStrings())
+// cout << (bst.add(str) ? "" : "Not ") << "Added " << str << endl;
 break;
 case 7:
-bst.clear();
+// bst.clear();
 break;
 case 8: {
-bst.clear();
-vector<string> v {getStrings()};
-bst.readTree(&v[0], v.size());
+// bst.clear();
+// vector<string> v {getStrings()};
+// bst.readTree(&v[0], v.size());
 break;
 }
 case 10: {
-bst.clear();
+// bst.clear();
 return;
 }
 default:
@@ -102,14 +107,15 @@ cout << "Bad input" << endl;
 cin.clear();
 cin.ignore(INT_MAX,'\n');
 }
-bst.displaySideways();
+// bst.displaySideways();
 cout << menu;
 }
 }
 
 
+// Now it works
 void treeMenuInt() {
-BinarySearchTree<int> bst;
+// BinarySearchTree<int> bst;
 const string menu = "treeMenuInt\n1. Add\n10. Exit\n>> ";
 int choice;
 int number;
@@ -120,10 +126,10 @@ switch (choice) {
 case 1:
 cout << "Enter a number: ";
 cin >> number;
-cout << (bst.add(number) ? "" : "Not ") << "Added " << number << endl;
+// cout << (bst.add(number) ? "" : "Not ") << "Added " << number << endl;
 break;
 case 10:
-bst.clear();
+// bst.clear();
 return;
 default:
 cout << "Bad input" << endl;
@@ -132,10 +138,12 @@ cin.clear();
 cin.ignore(INT_MAX,'\n');
 }
 }
-bst.displaySideways();
+// bst.displaySideways();
 cout << menu;
 }
 }
+/*
+
 
 int main() {
 BinarySearchTree<string> bst1;
