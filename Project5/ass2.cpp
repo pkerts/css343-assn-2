@@ -142,36 +142,29 @@ cin.ignore(INT_MAX,'\n');
 cout << menu;
 }
 }
-/*
+
 
 
 int main() {
-BinarySearchTree<string> bst1;
-BinarySearchTree<string> bst2;
-bst1.add("g");
-bst1.add("d");
-bst1.add("k");
-cout << ((bst1 != bst2) ? "OK" : "ERR") << ": bst1 != bst2" << endl;
-bst2.add("g");
-bst2.add("d");
-bst2.add("k");
-cout << ((bst1 == bst2) ? "OK" : "ERR") << ": bst1 == bst2" << endl;
-cout << (bst1.contains("d") ? "OK" : "ERR") << ": bst1 contains d" << endl;
-cout << (bst1.contains("x") ? "ERR" : "OK") << ": bst1 does not contain x" << endl;
-cout << (bst1.add("g") ? "ERR" : "OK") << ": adding g second time returns false" << endl;
-BinarySearchTree<string> bst3("g");
-cout << (bst3.contains("x") ? "ERR" : "OK") << ": bst3 does not contain x" << endl;
-cout << (bst3.contains("g") ? "OK" : "ERR") << ": bst3 contains g" << endl;
-BinarySearchTree<string> bst4(bst2);
-cout << ((bst4 == bst2) ? "OK" : "ERR") << ": bst4 == bst2" << endl;
+//BinarySearchTree<string> bst1;
+//BinarySearchTree<string> bst2;
+//bst1.add("g");
+//bst1.add("d");
+//bst1.add("k");
+//cout << ((bst1 != bst2) ? "OK" : "ERR") << ": bst1 != bst2" << endl;
+//bst2.add("g");
+//bst2.add("d");
+//bst2.add("k");
+//cout << ((bst1 == bst2) ? "OK" : "ERR") << ": bst1 == bst2" << endl;
+//cout << (bst1.contains("d") ? "OK" : "ERR") << ": bst1 contains d" << endl;
+//cout << (bst1.contains("x") ? "ERR" : "OK") << ": bst1 does not contain x" << endl;
+//cout << (bst1.add("g") ? "ERR" : "OK") << ": adding g second time returns false" << endl;
+//BinarySearchTree<string> bst3("g");
+//cout << (bst3.contains("x") ? "ERR" : "OK") << ": bst3 does not contain x" << endl;
+//cout << (bst3.contains("g") ? "OK" : "ERR") << ": bst3 contains g" << endl;
+//BinarySearchTree<string> bst4(bst2);
+//cout << ((bst4 == bst2) ? "OK" : "ERR") << ": bst4 == bst2" << endl;
 treeMenuString();
 // treeMenuInt();
 return 0;
-}
-*/
-int main()
-{
-	std::cout << "yoyoyo/n";
-	std::cin.get();
-	return 0;
 }
