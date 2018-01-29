@@ -1,6 +1,5 @@
 #pragma once
 
-/* 
 
 // Yusuf Pisan pisan@uw.edu
 // 15 Jan 2018
@@ -64,4 +63,3 @@ BinaryNode<ItemType>* rightPtr {nullptr};
 #include "binarynode.cpp"
 
 #endif // BINARYNODE_H
-*/
