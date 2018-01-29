@@ -117,6 +117,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="ass2.cpp" />
+    <ClCompile Include="binarynode.cpp" />
     <ClCompile Include="binarysearchtree.cpp" />
   </ItemGroup>
   <ItemGroup>
